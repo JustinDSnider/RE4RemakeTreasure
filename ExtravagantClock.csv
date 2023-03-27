@@ -1,10 +1,10 @@
-Gem List, Base Value, Total Gem Value, Multiplier, Overall Value, Overall Minus Gem Value
-Emerald Ruby, 9000, 8000, 1.1, 18700, 10700
-Alexandrite Ruby, 9000, 9000, 1.1, 19800, 10800
-Beryl Ruby, 9000, 12000, 1.2, 25200, 13200
-Emerald Sapphire, 9000, 9000, 1.1, 19800, 10800
-Alexandrite Sapphire, 9000, 10000, 1.1, 20900, 10900
-Beryl Sapphire, 9000, 13000, 1.1, 24200, 11200
-Diamond Emerald, 9000, 12000, 1.1, 23100, 11100
-Alexandrite Diamond, 9000, 13000, 1.1, 24200, 11200
-Beryl Diamond, 9000, 16000, 1.1, 27500, 11500
+"Gem List"," Base Value"," Total Gem Value"," Multiplier"," Overall Value"," Overall Minus Gem Value"
+"Emerald Ruby",9000,8000,1.1,18700,10700
+"Alexandrite Ruby",9000,9000,1.1,19800,10800
+"Emerald Sapphire",9000,9000,1.1,19800,10800
+"Alexandrite Sapphire",9000,10000,1.1,20900,10900
+"Diamond Emerald",9000,12000,1.1,23100,11100
+"Beryl Sapphire",9000,13000,1.1,24200,11200
+"Alexandrite Diamond",9000,13000,1.1,24200,11200
+"Beryl Ruby",9000,12000,1.2,25200,13200
+"Beryl Diamond",9000,16000,1.1,27500,11500

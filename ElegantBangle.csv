@@ -1,7 +1,7 @@
-Gem List, Base Value, Total Gem Value, Multiplier, Overall Value, Overall Minus Gem Value
-Ruby Ruby, 5000, 6000, 1.2, 13200, 7200
-Ruby Sapphire, 5000, 7000, 1.1, 13200, 6200
-Diamond Ruby, 5000, 10000, 1.1, 16500, 6500
-Sapphire Sapphire, 5000, 8000, 1.2, 15600, 7600
-Diamond Sapphire, 5000, 11000, 1.1, 17600, 6600
-Diamond Diamond, 5000, 14000, 1.2, 22800, 8800
+"Gem List"," Base Value"," Total Gem Value"," Multiplier"," Overall Value"," Overall Minus Gem Value"
+"Ruby Ruby",5000,6000,1.2,13200,7200
+"Ruby Sapphire",5000,7000,1.1,13200,6200
+"Sapphire Sapphire",5000,8000,1.2,15600,7600
+"Diamond Ruby",5000,10000,1.1,16500,6500
+"Diamond Sapphire",5000,11000,1.1,17600,6600
+"Diamond Diamond",5000,14000,1.2,22800,8800

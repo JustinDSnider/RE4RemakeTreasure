@@ -1,37 +1,37 @@
-Gem List, Base Value, Total Gem Value, Multiplier, Overall Value, Overall Minus Gem Value
-Emerald Emerald Ruby Ruby, 11000, 16000, 1.5, 40500, 24500
-Alexandrite Emerald Ruby Ruby, 11000, 17000, 1.3, 36400, 19400
-Beryl Emerald Ruby Ruby, 11000, 20000, 1.4, 43400, 23400
-Alexandrite Alexandrite Ruby Ruby, 11000, 18000, 1.5, 43500, 25500
-Alexandrite Beryl Ruby Ruby, 11000, 21000, 1.4, 44800, 23800
-Beryl Beryl Ruby Ruby, 11000, 24000, 1.7, 59500, 35500
-Emerald Emerald Ruby Sapphire, 11000, 17000, 1.3, 36400, 19400
-Alexandrite Emerald Ruby Sapphire, 11000, 18000, 1.6, 46400, 28400
-Beryl Emerald Ruby Sapphire, 11000, 21000, 1.3, 41600, 20600
-Alexandrite Alexandrite Ruby Sapphire, 11000, 19000, 1.3, 39000, 20000
-Alexandrite Beryl Ruby Sapphire, 11000, 22000, 1.3, 42900, 20900
-Beryl Beryl Ruby Sapphire, 11000, 25000, 1.4, 50400, 25400
-Diamond Emerald Emerald Ruby, 11000, 20000, 1.3, 40300, 20300
-Alexandrite Diamond Emerald Ruby, 11000, 21000, 1.6, 51200, 30200
-Beryl Diamond Emerald Ruby, 11000, 24000, 1.3, 45500, 21500
-Alexandrite Alexandrite Diamond Ruby, 11000, 22000, 1.3, 42900, 20900
-Alexandrite Beryl Diamond Ruby, 11000, 25000, 1.3, 46800, 21800
-Beryl Beryl Diamond Ruby, 11000, 28000, 1.4, 54600, 26600
-Emerald Emerald Sapphire Sapphire, 11000, 18000, 1.5, 43500, 25500
-Alexandrite Emerald Sapphire Sapphire, 11000, 19000, 1.3, 39000, 20000
-Beryl Emerald Sapphire Sapphire, 11000, 22000, 1.3, 42900, 20900
-Alexandrite Alexandrite Sapphire Sapphire, 11000, 20000, 1.5, 46500, 26500
-Alexandrite Beryl Sapphire Sapphire, 11000, 23000, 1.3, 44200, 21200
-Beryl Beryl Sapphire Sapphire, 11000, 26000, 1.5, 55500, 29500
-Diamond Emerald Emerald Sapphire, 11000, 21000, 1.3, 41600, 20600
-Alexandrite Diamond Emerald Sapphire, 11000, 22000, 1.6, 52800, 30800
-Beryl Diamond Emerald Sapphire, 11000, 25000, 1.6, 57600, 32600
-Alexandrite Alexandrite Diamond Sapphire, 11000, 23000, 1.3, 44200, 21200
-Alexandrite Beryl Diamond Sapphire, 11000, 26000, 1.6, 59200, 33200
-Beryl Beryl Diamond Sapphire, 11000, 29000, 1.3, 52000, 23000
-Diamond Diamond Emerald Emerald, 11000, 24000, 1.5, 52500, 28500
-Alexandrite Diamond Diamond Emerald, 11000, 25000, 1.3, 46800, 21800
-Beryl Diamond Diamond Emerald, 11000, 28000, 1.3, 50700, 22700
-Alexandrite Alexandrite Diamond Diamond, 11000, 26000, 1.5, 55500, 29500
-Alexandrite Beryl Diamond Diamond, 11000, 29000, 1.3, 52000, 23000
-Beryl Beryl Diamond Diamond, 11000, 32000, 1.5, 64500, 32500
+"Gem List"," Base Value"," Total Gem Value"," Multiplier"," Overall Value"," Overall Minus Gem Value"
+"Alexandrite Emerald Ruby Ruby",11000,17000,1.3,36400,19400
+"Emerald Emerald Ruby Sapphire",11000,17000,1.3,36400,19400
+"Alexandrite Alexandrite Ruby Sapphire",11000,19000,1.3,39000,20000
+"Alexandrite Emerald Sapphire Sapphire",11000,19000,1.3,39000,20000
+"Diamond Emerald Emerald Ruby",11000,20000,1.3,40300,20300
+"Emerald Emerald Ruby Ruby",11000,16000,1.5,40500,24500
+"Beryl Emerald Ruby Sapphire",11000,21000,1.3,41600,20600
+"Diamond Emerald Emerald Sapphire",11000,21000,1.3,41600,20600
+"Alexandrite Beryl Ruby Sapphire",11000,22000,1.3,42900,20900
+"Alexandrite Alexandrite Diamond Ruby",11000,22000,1.3,42900,20900
+"Beryl Emerald Sapphire Sapphire",11000,22000,1.3,42900,20900
+"Beryl Emerald Ruby Ruby",11000,20000,1.4,43400,23400
+"Alexandrite Alexandrite Ruby Ruby",11000,18000,1.5,43500,25500
+"Emerald Emerald Sapphire Sapphire",11000,18000,1.5,43500,25500
+"Alexandrite Beryl Sapphire Sapphire",11000,23000,1.3,44200,21200
+"Alexandrite Alexandrite Diamond Sapphire",11000,23000,1.3,44200,21200
+"Alexandrite Beryl Ruby Ruby",11000,21000,1.4,44800,23800
+"Beryl Diamond Emerald Ruby",11000,24000,1.3,45500,21500
+"Alexandrite Emerald Ruby Sapphire",11000,18000,1.6,46400,28400
+"Alexandrite Alexandrite Sapphire Sapphire",11000,20000,1.5,46500,26500
+"Alexandrite Beryl Diamond Ruby",11000,25000,1.3,46800,21800
+"Alexandrite Diamond Diamond Emerald",11000,25000,1.3,46800,21800
+"Beryl Beryl Ruby Sapphire",11000,25000,1.4,50400,25400
+"Beryl Diamond Diamond Emerald",11000,28000,1.3,50700,22700
+"Alexandrite Diamond Emerald Ruby",11000,21000,1.6,51200,30200
+"Beryl Beryl Diamond Sapphire",11000,29000,1.3,52000,23000
+"Alexandrite Beryl Diamond Diamond",11000,29000,1.3,52000,23000
+"Diamond Diamond Emerald Emerald",11000,24000,1.5,52500,28500
+"Alexandrite Diamond Emerald Sapphire",11000,22000,1.6,52800,30800
+"Beryl Beryl Diamond Ruby",11000,28000,1.4,54600,26600
+"Beryl Beryl Sapphire Sapphire",11000,26000,1.5,55500,29500
+"Alexandrite Alexandrite Diamond Diamond",11000,26000,1.5,55500,29500
+"Beryl Diamond Emerald Sapphire",11000,25000,1.6,57600,32600
+"Alexandrite Beryl Diamond Sapphire",11000,26000,1.6,59200,33200
+"Beryl Beryl Ruby Ruby",11000,24000,1.7,59500,35500
+"Beryl Beryl Diamond Diamond",11000,32000,1.5,64500,32500

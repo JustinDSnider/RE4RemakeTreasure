@@ -91,21 +91,39 @@ namespace RE4Treasure
 		static List<List<string>> GeneratePermutationOfPermutations(List<List<string>> roundPermutations, List<List<string>> squarePermutations)
 		{
 			List<List<string>> permutations = new List<List<string>>();
-
-			foreach (List<string> round in roundPermutations)
+			if (roundPermutations.Count != 0)
 			{
-				foreach (List<string> square in squarePermutations)
+				foreach (List<string> round in roundPermutations)
 				{
-					List<string> permutation = new List<string>();
-					permutation.AddRange(round);
-					permutation.AddRange(square);
-					permutation.Sort();
-					if (!permutations.Any(existingPermutation => existingPermutation.SequenceEqual(permutation)))
+					foreach (List<string> square in squarePermutations)
 					{
-						permutations.Add(permutation);
+						List<string> permutation = new List<string>();
+						permutation.AddRange(round);
+						permutation.AddRange(square);
+						permutation.Sort();
+						if (!permutations.Any(existingPermutation => existingPermutation.SequenceEqual(permutation)))
+						{
+							permutations.Add(permutation);
+						}
 					}
 				}
 			}
+			else
+			{
+
+					foreach (List<string> square in squarePermutations)
+					{
+						List<string> permutation = new List<string>();
+						permutation.AddRange(square);
+						permutation.Sort();
+						if (!permutations.Any(existingPermutation => existingPermutation.SequenceEqual(permutation)))
+						{
+							permutations.Add(permutation);
+						}
+					}
+
+			}
+			
 			
 			return permutations;
 		}
@@ -119,7 +137,7 @@ namespace RE4Treasure
 
 			List<List<string>> roundPermutations = new();
 			List<List<string>> squarePermutations = new();
-			List<List<string>> finalPermutations;
+			List<List<string>> finalPermutations = new List<List<string>>();
 
 			if (roundGemCount > 0)
 			{
@@ -129,25 +147,28 @@ namespace RE4Treasure
 			{
 				squarePermutations = GeneratePermutations(squareGems, squareGemCount);
 			}
+
 			if (squarePermutations.Count != 0 && squarePermutations.Count != 0)
 			{
 				finalPermutations = GeneratePermutationOfPermutations(roundPermutations, squarePermutations);
 			}
+			else if (squarePermutations.Count != 0)
+			{
+				finalPermutations = squarePermutations;
+			}
+			else if (roundPermutations.Count != 0)
+			{
+				finalPermutations = roundPermutations;
+			}
 			else
 			{
-				if (squarePermutations.Count != 0)
-				{
-					finalPermutations = squarePermutations;
-				}
-				else
-				{
-					finalPermutations = roundPermutations;
-				}
+				Console.WriteLine("Yo what the hell happened.");
 			}
+
 			return finalPermutations;
 		}
 
-		static float GetMultiplier(int totalGems, List<string> currPermutation)
+		static float GetMultiplier(List<string> currPermutation)
 		{
 			HashSet<string> uniqueGems = new HashSet<string>();
 			List<int> gemCounts = new List<int>();
@@ -266,13 +287,11 @@ namespace RE4Treasure
 				{
 					int totalGemValue = 0;
 					string gemList = string.Join(" ", item);
-					float multiplier = GetMultiplier((roundGemCount + squareGemCount), item);
+					float multiplier = GetMultiplier(item);
 					foreach (var item2 in item)
 					{
 						totalGemValue += gemValues[item2];
 					}
-
-					//Console.WriteLine($"{gemList}: (({baseValue} + {totalGemValue})) * {multiplier} = {Convert.ToSingle(baseValue + totalGemValue) * multiplier}");
 					int totalValue = Convert.ToInt32(Convert.ToSingle(baseValue + totalGemValue) * multiplier);
 					int totalValueAdjusted = totalValue - totalGemValue;
 					sw.WriteLine($"{gemList}, {baseValue}, {totalGemValue}, {multiplier}, {totalValue}, {totalValueAdjusted}");
