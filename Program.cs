@@ -110,20 +110,17 @@ namespace RE4Treasure
 			}
 			else
 			{
-
-					foreach (List<string> square in squarePermutations)
+				foreach (List<string> square in squarePermutations)
+				{
+					List<string> permutation = new List<string>();
+					permutation.AddRange(square);
+					permutation.Sort();
+					if (!permutations.Any(existingPermutation => existingPermutation.SequenceEqual(permutation)))
 					{
-						List<string> permutation = new List<string>();
-						permutation.AddRange(square);
-						permutation.Sort();
-						if (!permutations.Any(existingPermutation => existingPermutation.SequenceEqual(permutation)))
-						{
-							permutations.Add(permutation);
-						}
+						permutations.Add(permutation);
 					}
-
+				}
 			}
-			
 			
 			return permutations;
 		}
@@ -280,9 +277,11 @@ namespace RE4Treasure
 		{
 			List<List<string>> gemPermutations = GetPermutations(roundGemCount, squareGemCount);
 
+			int totalGems = roundGemCount + squareGemCount;
+
 			using (StreamWriter sw = File.CreateText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), $"{name}.csv")))
 			{
-				sw.WriteLine("Gem List, Base Value, Total Gem Value, Multiplier, Overall Value, Overall Minus Gem Value");
+				sw.WriteLine("Gem List, Base Value, Total Gem Value, Multiplier, Overall Value, Overall Minus Gem Value, Overall Minus Gem/Base, Avg Gained Per Gem");
 				foreach (var item in gemPermutations)
 				{
 					int totalGemValue = 0;
@@ -294,7 +293,9 @@ namespace RE4Treasure
 					}
 					int totalValue = Convert.ToInt32(Convert.ToSingle(baseValue + totalGemValue) * multiplier);
 					int totalValueAdjusted = totalValue - totalGemValue;
-					sw.WriteLine($"{gemList}, {baseValue}, {totalGemValue}, {multiplier}, {totalValue}, {totalValueAdjusted}");
+					int totalValueAdjusted2 = totalValue - totalGemValue - baseValue;
+					float avgGem = Convert.ToSingle(totalValueAdjusted2 / totalGems);
+					sw.WriteLine($"{gemList}, {baseValue}, {totalGemValue}, {multiplier}, {totalValue}, {totalValueAdjusted}, {totalValueAdjusted2}, {avgGem}");
 				}
 			}
 		}
